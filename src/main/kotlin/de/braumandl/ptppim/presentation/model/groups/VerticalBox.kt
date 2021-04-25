@@ -5,13 +5,7 @@ import de.braumandl.ptppim.presentation.model.LabelPresentationModel
 import javafx.scene.Node
 import javafx.scene.layout.VBox
 
-class VerticalBox(private val spacing : Double) : NodeGenerator {
-    /**
-     * Example of a lazy property realized by a delegated property.
-     * Here lazy is the function which generates the lazy property
-     * with the help of an initializer.
-     */
-    val children : MutableList<NodeGenerator> by lazy { mutableListOf() }
+class VerticalBox(private val spacing : Double) : AbstractGroup(), NodeGenerator {
 
     override fun generateNode(): Node {
         val fxVbox = VBox(spacing)
@@ -22,10 +16,4 @@ class VerticalBox(private val spacing : Double) : NodeGenerator {
         return fxVbox
     }
 
-    fun label(labelText: String, init: LabelPresentationModel.() -> Unit): LabelPresentationModel {
-        val label = LabelPresentationModel(labelText)
-        label.init()
-        children.add(label)
-        return label
-    }
 }

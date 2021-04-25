@@ -25,12 +25,12 @@ class App : Application() {
     }
 
     fun main() {
-        launch();
+        launch()
     }
 
     fun verticalBox(init: VerticalBox.() -> Unit): VerticalBox {
         val vbox = VerticalBox(8.0)
         vbox.init()
-        return vbox;
+        return vbox
     }
 }
