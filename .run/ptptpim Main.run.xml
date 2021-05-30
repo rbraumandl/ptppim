@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ptptpim Main" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="de.braumandl.ptppim.App" />
+    <module name="ptptpim" />
+    <option name="VM_PARAMETERS" value="--module-path ${HOME}/.m2/repository/org/openjfx/javafx-controls/11.0.2:${HOME}/.m2/repository/org/openjfx/javafx-base/11.0.2:${HOME}/.m2/repository/org/openjfx/javafx-graphics/11.0.2:${HOME}/programme/kotlin/kotlinc/lib/kotlin-stdlib-jdk8.jar:${HOME}/programme/kotlin/kotlinc/lib/kotlin-stdlib-jdk7.jar:${HOME}/programme/kotlin/kotlinc/lib/kotlin-stdlib.jar:target/classes" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
